@@ -3,100 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn HTML with Fun! 🎉</title>
+    <title>Super Simple Story Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #2d2f36;
+            color: #f0f0f0;
+            margin: 0;
+        }
+        h1 {
+            color: #f8d210;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #f8d210;
+            color: #2d2f36;
+            padding: 15px 25px;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ffac1d;
+        }
+        #story {
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 600px;
+            display: none;
+            border: 1px solid #f8d210;
+            border-radius: 8px;
+        }
+    </style>
 </head>
-<body style="background-color: #e0f7fa; text-align: center; font-family: 'Comic Sans MS', cursive, sans-serif; color: #333;">
-    <header>
-        <h1 style="color: #ff4081;">Welcome to Your HTML Adventure! 🚀</h1>
-        <p style="color: #3f51b5; font-size: 20px;">Get ready to learn HTML in a fun and colorful way! 🎨</p>
-        <hr style="border: 3px solid #ff4081; width: 60%; margin: auto;">
-    </header>
-    
-    <section style="margin: 20px;">
-        <h2 style="color: #4caf50;">What is HTML? 🤔</h2>
-        <p style="font-size: 18px;">HTML stands for HyperText Markup Language. It's the standard language for creating web pages! 🌐</p>
-        <p style="font-size: 16px;">Think of HTML as the skeleton of your webpage—it gives structure to your content! 💪</p>
-        <hr style="border: 1px solid #4caf50; width: 60%; margin: auto;">
-    </section>
+<body>
 
-    <section style="margin: 20px;">
-        <h2 style="color: #2196f3;">Basic Structure of an HTML Document 🏗️</h2>
-        <p>Here’s what a simple HTML document looks like:</p>
-        <pre style="background-color: #e1f5fe; padding: 10px; border-radius: 5px; font-size: 16px;">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Your Title Here&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Hello, World!&lt;/h1&gt;
-        &lt;p&gt;This is my first webpage!&lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-        </pre>
-        <p style="font-size: 16px;">Here's what each part means:</p>
-        <ul style="text-align: left; display: inline-block; font-size: 16px;">
-            <li><strong>&lt;!DOCTYPE html&gt;</strong>: Tells the browser this is an HTML5 document.</li>
-            <li><strong>&lt;html&gt;</strong>: The root element of an HTML page.</li>
-            <li><strong>&lt;head&gt;</strong>: Contains meta-information about the document.</li>
-            <li><strong>&lt;title&gt;</strong>: Sets the title of the webpage (shown in the browser tab).</li>
-            <li><strong>&lt;body&gt;</strong>: Contains the content of the webpage.</li>
-        </ul>
-        <hr style="border: 1px solid #2196f3; width: 60%; margin: auto;">
-    </section>
-    
-    <section style="margin: 20px;">
-        <h2 style="color: #9c27b0;">Common HTML Tags 🏷️</h2>
-        <p style="font-size: 16px;">Here are some common tags you will use:</p>
-        <ul style="text-align: left; display: inline-block; font-size: 16px;">
-            <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong>: Headings (h1 is the largest).</li>
-            <li><strong>&lt;p&gt;</strong>: Paragraphs.</li>
-            <li><strong>&lt;a&gt;</strong>: Links (e.g., &lt;a href="https://example.com"&gt;Click here&lt;/a&gt;).</li>
-            <li><strong>&lt;img&gt;</strong>: Images (e.g., &lt;img src="image.jpg" alt="Description"&gt;).</li>
-            <li><strong>&lt;ul&gt; &lt;ol&gt; &lt;li&gt;</strong>: Lists (unordered and ordered).</li>
-        </ul>
-        <hr style="border: 1px solid #9c27b0; width: 60%; margin: auto;">
-    </section>
+    <h1>Click to Read a Super Cool Story!</h1>
+    <button onclick="showStory()">Read the Story</button>
 
-    <section style="margin: 20px;">
-        <h2 style="color: #ff9800;">Apps You Can Use! 📱</h2>
-        <p>Here are some cool tools to help you code:</p>
-        <ul style="text-align: left; display: inline-block; font-size: 16px;">
-            <li>🌟 Visual Studio Code</li>
-            <li>🌟 Sublime Text</li>
-            <li>🌟 Notepad++</li>
-        </ul>
-        <hr style="border: 1px solid #ff9800; width: 60%; margin: auto;">
-    </section>
+    <div id="story">
+        <p>Once upon a time, there was a curious cat named Whiskers who loved adventure. One night, as the stars twinkled above, Whiskers climbed to the top of a tall tree and saw the entire town asleep below. But just as he was about to jump down, he spotted a tiny glowing light on the horizon. Whiskers knew he had to follow it! Little did he know, that light was the start of an adventure he’d never forget.</p>
+    </div>
 
-    <section style="margin: 20px;">
-        <h2 style="color: #f44336;">Watch My YouTube Video! 🎥</h2>
-        <p style="font-size: 18px;">Learn more about HTML in my YouTube video below:</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/yjkbBfBW2oE" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        <hr style="border: 1px solid #f44336; width: 60%; margin: auto;">
-    </section>
+    <script>
+        function showStory() {
+            const storyDiv = document.getElementById("story");
+            storyDiv.style.display = "block";
+        }
+    </script>
 
-    <section style="margin: 20px;">
-        <h2 style="color: #ff5722;">Pop Quiz Time! 📝</h2>
-        
-        <h3 style="color: #ff5722;">Quiz 1: What does HTML stand for?</h3>
-        <button onclick="alert('A) HyperText Markup Language 🎉')">A) HyperText Markup Language</button>
-        <button onclick="alert('B) HyperText Made Language ❌')">B) HyperText Made Language</button>
-        <button onclick="alert('C) HighText Markup Language ❌')">C) HighText Markup Language</button>
-
-        <h3 style="color: #ff5722;">Quiz 2: What is the correct HTML element for the largest heading?</h3>
-        <button onclick="alert('A) &lt;h2&gt; ❌')">A) &lt;h2&gt;</button>
-        <button onclick="alert('B) &lt;h1&gt; 🎉')">B) &lt;h1&gt;</button>
-        <button onclick="alert('C) &lt;h6&gt; ❌')">C) &lt;h6&gt;</button>
-
-        <h3 style="color: #ff5722;">Quiz 3: Which HTML attribute is used to define inline styles?</h3>
-        <button onclick="alert('A) class ❌')">A) class</button>
-        <button onclick="alert('B) style 🎉')">B) style</button>
-        <button onclick="alert('C) id ❌')">C) id</button>
-    </section>
-
-    <footer style="margin-top: 20px;">
-        <p style="color: #000; font-size: 16px;">Happy coding! 🌈 Remember, learning HTML is fun and easy!</p>
-    </footer>
 </body>
 </html>
